@@ -777,16 +777,29 @@
                     </ul>
                 </div>
 
-                <!-- Newsletter -->
-                <div class="footer__newsletter">
-                    <h4>Newsletter</h4>
-                    <p>Subscribe for design tips & updates</p>
-                    <form class="footer__newsletter-form">
-                        <input type="email" placeholder="Your email">
-                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                    </form>
-                </div>
-            </div>
+
+<!-- Newsletter -->
+<div class="footer__newsletter">
+    <h4>Newsletter</h4>
+    <p>Subscribe for design tips & updates</p>
+
+    <form class="footer__newsletter-form" id="newsletter-form">
+        <input
+            type="email"
+            name="email"
+            placeholder="Your email"
+            aria-label="Your email address"
+            autocomplete="email"
+            required
+        >
+        <button type="submit" aria-label="Subscribe">
+            <i class="fas fa-paper-plane"></i>
+        </button>
+    </form>
+
+    <p id="newsletter-status" role="status" aria-live="polite"></p>
+</div>
+
 
             <!-- Copyright -->
             <div class="footer__bottom">
