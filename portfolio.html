@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore graphic design, Photoshop, Illustrator, WordPress, and branding portfolio work by MD FuYAD HASAN POLLAB.">
+    <title>Portfolio - MD FuYAD HASAN POLLAB</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .portfolio-page { padding-top: 130px; }
+        .portfolio-page__note { max-width: 760px; margin: -18px auto 35px; text-align: center; color: var(--text-muted); font-size: 1.35rem; }
+        .portfolio-item__link { border: 0; cursor: pointer; }
+        .portfolio-modal { width: min(92vw, 760px); max-height: 90vh; padding: 28px; border: 1px solid var(--border-color); border-radius: var(--radius-lg); background: var(--bg-card); color: var(--text-light); }
+        .portfolio-modal::backdrop { background: rgba(5, 5, 12, .82); backdrop-filter: blur(6px); }
+        .portfolio-modal__close { display: block; margin-left: auto; width: 42px; height: 42px; border: 1px solid var(--border-color); border-radius: 50%; background: transparent; color: var(--text-white); font-size: 2rem; cursor: pointer; }
+        .portfolio-modal__image { display: block; width: 100%; max-height: 56vh; object-fit: contain; margin: 10px auto 22px; border-radius: 12px; background: #11111a; }
+        .portfolio-modal__category { color: var(--primary-color); font-size: 1.25rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+        .portfolio-modal__title { margin: 8px 0 20px; color: var(--text-white); font-size: 2.5rem; }
+        @media (max-width: 600px) { .portfolio-modal { padding: 18px; } .portfolio-modal__title { font-size: 2rem; } }
+    </style>
+</head>
+<body>
+    <header class="header scrolled" id="header">
+        <div class="container">
+            <a href="index.html#home" class="logo"><span class="logo-text">POLLAB<span class="logo-dot">.</span></span></a>
+            <nav class="nav" id="nav" aria-label="Main navigation">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="portfolio.html" class="nav__link active" aria-current="page">Portfolio</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="nav__toggle" id="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav" style="background:transparent;border:0;padding:0;">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="portfolio section portfolio-page" id="portfolio">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">My Work</span>
+                    <h1 class="section__title">Full <span>Portfolio</span></h1>
+                    <p class="section__description">Browse projects by service. Choose a category or open a project preview.</p>
+                </div>
+<div class="portfolio__filters" role="group" aria-label="Filter projects">
+                    <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All Works</button>
+                    <button class="filter-btn" type="button" data-filter="photoshop" aria-pressed="false">Photoshop</button>
+                    <button class="filter-btn" type="button" data-filter="illustrator" aria-pressed="false">Illustrator</button>
+                    <button class="filter-btn" type="button" data-filter="wordpress" aria-pressed="false">WordPress</button>
+                    <button class="filter-btn" type="button" data-filter="branding" aria-pressed="false">Branding</button>
+                </div>
+
+                <div class="portfolio__grid">
+                    <article class="portfolio-item" data-category="photoshop">
+                        <img src="images/project-1.svg" alt="Project preview: Creative Photo Manipulation" loading="lazy">
+                        <div class="portfolio-item__overlay">
+                            <span class="portfolio-item__category">Photoshop</span><h2 class="portfolio-item__title">Creative Photo Manipulation</h2>
+                            <button class="portfolio-item__link" type="button" data-project-open data-title="Creative Photo Manipulation" data-category="Photoshop" data-image="images/project-1.svg" aria-label="Open Creative Photo Manipulation preview"><i class="fas fa-eye" aria-hidden="true"></i></button>
+                        </div>
+                    </article>
+                    <article class="portfolio-item" data-category="illustrator">
+                        <img src="images/project-2.svg" alt="Project preview: Vector Art Design" loading="lazy">
+                        <div class="portfolio-item__overlay">
+                            <span class="portfolio-item__category">Illustrator</span><h2 class="portfolio-item__title">Vector Art Design</h2>
+                            <button class="portfolio-item__link" type="button" data-project-open data-title="Vector Art Design" data-category="Illustrator" data-image="images/project-2.svg" aria-label="Open Vector Art Design preview"><i class="fas fa-eye" aria-hidden="true"></i></button>
+                        </div>
+                    </article>
+                    <article class="portfolio-item" data-category="wordpress">
+                        <img src="images/project-3.svg" alt="Project preview: Business Website Design" loading="lazy">
+                        <div class="portfolio-item__overlay">
+                            <span class="portfolio-item__category">WordPress</span><h2 class="portfolio-item__title">Business Website Design</h2>
+                            <button class="portfolio-item__link" type="button" data-project-open data-title="Business Website Design" data-category="WordPress" data-image="images/project-3.svg" aria-label="Open Business Website Design preview"><i class="fas fa-eye" aria-hidden="true"></i></button>
+                        </div>
+                    </article>
+                    <article class="portfolio-item" data-category="branding">
+                        <img src="images/project-4.svg" alt="Project preview: Complete Brand Package" loading="lazy">
+                        <div class="portfolio-item__overlay">
+                            <span class="portfolio-item__category">Branding</span><h2 class="portfolio-item__title">Complete Brand Package</h2>
+                            <button class="portfolio-item__link" type="button" data-project-open data-title="Complete Brand Package" data-category="Branding" data-image="images/project-4.svg" aria-label="Open Complete Brand Package preview"><i class="fas fa-eye" aria-hidden="true"></i></button>
+                        </div>
+                    </article>
+                    <article class="portfolio-item" data-category="photoshop">
+                        <img src="images/project-5.svg" alt="Project preview: Social Media Graphics" loading="lazy">
+                        <div class="portfolio-item__overlay">
+                            <span class="portfolio-item__category">Photoshop</span><h2 class="portfolio-item__title">Social Media Graphics</h2>
+                            <button class="portfolio-item__link" type="button" data-project-open data-title="Social Media Graphics" data-category="Photoshop" data-image="images/project-5.svg" aria-label="Open Social Media Graphics preview"><i class="fas fa-eye" aria-hidden="true"></i></button>
+                        </div>
+                    </article>
+                    <article class="portfolio-item" data-category="illustrator">
+                        <img src="images/project-6.svg" alt="Project preview: Logo Collection" loading="lazy">
+                        <div class="portfolio-item__overlay">
+                            <span class="portfolio-item__category">Illustrator</span><h2 class="portfolio-item__title">Logo Collection</h2>
+                            <button class="portfolio-item__link" type="button" data-project-open data-title="Logo Collection" data-category="Illustrator" data-image="images/project-6.svg" aria-label="Open Logo Collection preview"><i class="fas fa-eye" aria-hidden="true"></i></button>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="portfolio__more">
+                    <a href="contact.html" class="btn btn--primary">Discuss a Project <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    <a href="index.html#portfolio" class="btn btn--outline" style="margin-left: 10px;">Back to Home</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <dialog class="portfolio-modal" id="portfolio-modal" aria-labelledby="portfolio-modal-title">
+        <button class="portfolio-modal__close" type="button" data-project-close aria-label="Close preview">&times;</button>
+        <img class="portfolio-modal__image" id="portfolio-modal-image" src="" alt="">
+        <span class="portfolio-modal__category" id="portfolio-modal-category"></span>
+        <h2 class="portfolio-modal__title" id="portfolio-modal-title"></h2>
+        <a class="btn btn--primary" href="contact.html">Ask about a similar project <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+    </dialog>
+
+    <footer class="footer">
+        <div class="container"><div class="footer__bottom"><p>&copy; 2026 <strong>MD FuYAD HASAN POLLAB</strong>. All Rights Reserved.</p></div></div>
+    </footer>
+    <a href="#portfolio" class="back-to-top" id="back-to-top" aria-label="Back to top"><i class="fas fa-chevron-up" aria-hidden="true"></i></a>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+

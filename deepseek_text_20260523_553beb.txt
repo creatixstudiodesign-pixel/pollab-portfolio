@@ -1,0 +1,22 @@
+pollab-portfolio/
+├── index.html          (মেইন ওয়ান-পেজ)
+├── about.html          (পরে ব্যবহারের জন্য আলাদা পেজ)
+├── portfolio.html      (পরে ব্যবহারের জন্য আলাদা পেজ)
+├── services.html       (পরে ব্যবহারের জন্য আলাদা পেজ)
+├── contact.html        (পরে ব্যবহারের জন্য আলাদা পেজ)
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+└── images/
+    ├── hero-bg.jpg        (তোমার নিজের ইমেজ দিয়ে রিপ্লেস করবে)
+    ├── about-img.jpg      (তোমার নিজের ইমেজ দিয়ে রিপ্লেস করবে)
+    ├── project-1.jpg
+    ├── project-2.jpg
+    ├── project-3.jpg
+    ├── project-4.jpg
+    ├── project-5.jpg
+    ├── project-6.jpg
+    ├── testimonial-1.jpg
+    ├── testimonial-2.jpg
+    └── testimonial-3.jpg

@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ==================== SEO META TAGS ==================== -->
+    <meta name="description" content="MD FuYAD HASAN POLLAB - Professional Graphics Designer specializing in Adobe Photoshop, Illustrator & WordPress">
+    <meta name="keywords" content="graphics designer, photoshop, illustrator, wordpress, portfolio">
+    <meta name="author" content="MD FuYAD HASAN POLLAB">
+
+    <title>MD FuYAD HASAN POLLAB | Graphics Designer</title>
+
+    <!-- ==================== FAVICON ==================== -->
+    <!-- Replace with your own favicon later -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- ==================== GOOGLE FONTS ==================== -->
+    <!-- Using Poppins for modern clean look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- ==================== FONT AWESOME ICONS ==================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- ==================== MAIN CSS ==================== -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ==================== PRELOADER ==================== -->
+    <!-- Shows a loading animation before the page fully loads -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- ==================== HEADER / NAVIGATION ==================== -->
+    <!-- Sticky header with logo and nav links -->
+    <header class="header" id="header">
+        <div class="container">
+            <!-- Logo -->
+            <a href="#home" class="logo">
+                <span class="logo-text">POLLAB<span class="logo-dot">.</span></span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">Portfolio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#testimonials" class="nav__link">Testimonials</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Hamburger Button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main>
+
+        <!-- ========== HOME / HERO SECTION ========== -->
+        <!-- Full-screen hero with gradient background, dot pattern, and typing animation -->
+        <section class="hero" id="home">
+            <!-- Animated dot pattern background (pure CSS) -->
+            <div class="hero__dots"></div>
+
+            <!-- Gradient overlay for depth -->
+            <div class="hero__overlay"></div>
+
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <!-- Small tagline -->
+                    <span class="hero__tagline">👋 Welcome to my world</span>
+
+                    <!-- Main heading with typing effect -->
+                    <h1 class="hero__title">
+                        Hi, I'm <br>
+                        <span class="hero__name">MD FuYAD HASAN</span>
+                        <span class="hero__name-highlight">POLLAB</span>
+                    </h1>
+
+                    <!-- Typing animation text (changed via JS) -->
+                    <div class="hero__typing">
+                        <span class="hero__typing-text"></span>
+                        <span class="hero__typing-cursor">|</span>
+                    </div>
+
+                    <!-- Short description -->
+                    <p class="hero__description">
+                        Professional Graphics Designer crafting stunning visuals with
+                        <span>Adobe Photoshop</span>, <span>Illustrator</span>, and <span>WordPress</span>.
+                        Turning ideas into eye-catching designs that leave a lasting impression.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="hero__buttons">
+                        <a href="#portfolio" class="btn btn--primary">
+                            <span>View My Work</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn--outline">
+                            <span>Hire Me</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </a>
+                    </div>
+
+                    <!-- Social Media Links (DEMO - replace with your own) -->
+                    <div class="hero__social">
+                        <a href="https://www.facebook.com/share/1VcEnyL6dL/" target="_blank" class="social-link" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/fuyadhasanpollab?dlrf=MXMzZjlheWJxa3RqaQ==" target="_blank" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/demo" target="_blank" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://behance.net/demo" target="_blank" class="social-link" title="Behance">
+                            <i class="fab fa-behance"></i>
+                        </a>
+                        <a href="https://t.me/Fuyad07" target="_blank" class="social-link" title="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://wa.me/8801740144167" target="_blank" class="social-link" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Image (Replace with your own photo) -->
+                <div class="hero__image">
+                    <div class="hero__image-wrapper">
+                        <!-- Replace src with your own image path -->
+                        <img src="images/profile.jpg" alt="MD FuYAD HASAN POLLAB - Graphics Designer">
+                    </div>
+                    <!-- Floating badge -->
+                    <div class="hero__badge hero__badge--1">
+                        <i class="fab fa-adobe"></i> Adobe Expert
+                    </div>
+                    <div class="hero__badge hero__badge--2">
+                        ⭐ 5+ Years Exp.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll down indicator -->
+            <a href="#about" class="scroll-down">
+                <span>Scroll Down</span>
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- ========== ABOUT SECTION ========== -->
+        <section class="about section" id="about">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section__header">
+                    <span class="section__subtitle">About Me</span>
+                    <h2 class="section__title">Crafting Visual Stories<br>That <span>Inspire</span></h2>
+                </div>
+
+                <div class="about__content">
+                    <!-- About Image -->
+                    <div class="about__image">
+                        <!-- Replace src with your own image -->
+                        <img src="images/about.jpg" alt="MD FuYAD HASAN POLLAB">
+                        <!-- Experience badge on image -->
+                        <div class="about__exp-badge">
+                            <span class="about__exp-number">5+</span>
+                            <span class="about__exp-text">Years of<br>Experience</span>
+                        </div>
+                    </div>
+
+                    <!-- About Text -->
+                    <div class="about__text">
+                        <h3 class="about__heading">
+                            A Passionate <span>Graphics Designer</span> from Bangladesh
+                        </h3>
+                        <p class="about__paragraph">
+                            I'm MD FuYAD HASAN POLLAB, a creative graphics designer with deep expertise in
+                            Adobe Photoshop, Illustrator, and WordPress. I specialize in creating visually
+                            compelling designs that communicate your brand's message effectively.
+                        </p>
+                        <p class="about__paragraph">
+                            From logo design to complete branding packages, social media graphics to
+                            website design — I bring creativity and precision to every project I take on.
+                            My goal is to deliver designs that not only look great but also drive results.
+                        </p>
+
+                        <!-- Quick Info Grid -->
+                        <div class="about__info">
+                            <div class="info-item">
+                                <i class="fas fa-user"></i>
+                                <div>
+                                    <span>Name</span>
+                                    <p>MD FuYAD HASAN POLLAB</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <span>Phone</span>
+                                    <p>+880 1740-144167</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <span>Email</span>
+                                    <p>fuyadsbd@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <span>Location</span>
+                                    <p>Dhaka, Bangladesh</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="about__buttons">
+                            <a href="cv/Pollab-CV.pdf" target="_blank" rel="noopener" class="btn btn--primary">
+                                <span>Download CV</span>
+                                <i class="fas fa-download"></i>
+                            </a>
+                            <!-- Link to separate about page for future use -->
+                            <a href="about.html" class="btn btn--outline">
+                                <span>More About Me</span>
+                                <i class="fas fa-user"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SERVICES SECTION ========== -->
+        <section class="services section" id="services">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">My Services</span>
+                    <h2 class="section__title">What I <span>Do</span> for Clients</h2>
+                    <p class="section__description">
+                        I provide high-quality design services to help your brand stand out
+                    </p>
+                </div>
+
+                <!-- Services Grid -->
+                <div class="services__grid">
+                    <!-- Service 1: Graphic Design -->
+                    <div class="service-card" data-aos="fade-up">
+                        <div class="service-card__icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3 class="service-card__title">Graphic Design</h3>
+                        <p class="service-card__text">
+                            Creative graphic design solutions for branding, marketing materials, and digital content that captures attention.
+                        </p>
+                        <a href="services.html#service-graphic-design" class="service-card__link">
+                            Learn More <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <!-- Service 2: Photoshop Editing -->
+                    <div class="service-card" data-aos="fade-up">
+                        <div class="service-card__icon">
+                            <i class="fas fa-camera-retro"></i>
+                        </div>
+                        <h3 class="service-card__title">Photo Editing</h3>
+                        <p class="service-card__text">
+                            Professional photo retouching, manipulation, and enhancement using Adobe Photoshop for stunning results.
+                        </p>
+                        <a href="services.html#service-photo-editing" class="service-card__link">
+                            Learn More <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <!-- Service 3: Illustrator -->
+                    <div class="service-card" data-aos="fade-up">
+                        <div class="service-card__icon">
+                            <i class="fas fa-vector-square"></i>
+                        </div>
+                        <h3 class="service-card__title">Vector Illustration</h3>
+                        <p class="service-card__text">
+                            Custom vector illustrations, logos, and icon designs created with Adobe Illustrator for scalable perfection.
+                        </p>
+                        <a href="services.html#service-vector-illustration" class="service-card__link">
+                            Learn More <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <!-- Service 4: WordPress -->
+                    <div class="service-card" data-aos="fade-up">
+                        <div class="service-card__icon">
+                            <i class="fab fa-wordpress"></i>
+                        </div>
+                        <h3 class="service-card__title">WordPress Design</h3>
+                        <p class="service-card__text">
+                            Custom WordPress website design and development, from simple blogs to full business websites.
+                        </p>
+                        <a href="services.html#service-wordpress" class="service-card__link">
+                            Learn More <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <!-- Service 5: UI/UX Design -->
+                    <div class="service-card" data-aos="fade-up">
+                        <div class="service-card__icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <h3 class="service-card__title">UI/UX Design</h3>
+                        <p class="service-card__text">
+                            User-friendly interface and experience design for websites and apps that users love to interact with.
+                        </p>
+                        <a href="services.html#service-ui-ux" class="service-card__link">
+                            Learn More <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <!-- Service 6: Branding -->
+                    <div class="service-card" data-aos="fade-up">
+                        <div class="service-card__icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3 class="service-card__title">Brand Identity</h3>
+                        <p class="service-card__text">
+                            Complete brand identity packages including logo, color palette, typography, and brand guidelines.
+                        </p>
+                        <a href="services.html#service-brand-identity" class="service-card__link">
+                            Learn More <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Link to separate services page -->
+                <div class="services__more">
+                    <a href="services.html" class="btn btn--outline">
+                        View All Services <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SKILLS SECTION ========== -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">My Skills</span>
+                    <h2 class="section__title">Technical <span>Expertise</span></h2>
+                    <p class="section__description">
+                        Tools & technologies I use daily to create amazing designs
+                    </p>
+                </div>
+
+                <div class="skills__content">
+                    <!-- Skill Bars (Left Side) -->
+                    <div class="skills__bars">
+                        <!-- Skill: Adobe Illustrator (same % as About page) -->
+                        <div class="skill-item">
+                            <div class="skill-item__header">
+                                <span class="skill-item__name">
+                                    <i class="fas fa-bezier-curve"></i> Adobe Illustrator
+                                </span>
+                                <span class="skill-item__percent">95%</span>
+                            </div>
+                            <div class="skill-item__bar">
+                                <div class="skill-item__progress" data-width="95" style="width: 0%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- Skill: Adobe Photoshop (same % as About page) -->
+                        <div class="skill-item">
+                            <div class="skill-item__header">
+                                <span class="skill-item__name">
+                                    <i class="fas fa-image"></i> Adobe Photoshop
+                                </span>
+                                <span class="skill-item__percent">92%</span>
+                            </div>
+                            <div class="skill-item__bar">
+                                <div class="skill-item__progress" data-width="92" style="width: 0%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- Skill: WordPress -->
+                        <div class="skill-item">
+                            <div class="skill-item__header">
+                                <span class="skill-item__name">
+                                    <i class="fab fa-wordpress"></i> WordPress
+                                </span>
+                                <span class="skill-item__percent">88%</span>
+                            </div>
+                            <div class="skill-item__bar">
+                                <div class="skill-item__progress" data-width="88" style="width: 0%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- Skill: Figma -->
+                        <div class="skill-item">
+                            <div class="skill-item__header">
+                                <span class="skill-item__name">
+                                    <i class="fab fa-figma"></i> Figma
+                                </span>
+                                <span class="skill-item__percent">80%</span>
+                            </div>
+                            <div class="skill-item__bar">
+                                <div class="skill-item__progress" data-width="80" style="width: 0%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- Skill: HTML/CSS -->
+                        <div class="skill-item">
+                            <div class="skill-item__header">
+                                <span class="skill-item__name">
+                                    <i class="fas fa-code"></i> HTML & CSS
+                                </span>
+                                <span class="skill-item__percent">88%</span>
+                            </div>
+                            <div class="skill-item__bar">
+                                <div class="skill-item__progress" data-width="88" style="width: 0%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- Skill: Adobe XD -->
+                        <div class="skill-item">
+                            <div class="skill-item__header">
+                                <span class="skill-item__name">
+                                    <i class="fas fa-pen-nib"></i> Adobe XD
+                                </span>
+                                <span class="skill-item__percent">82%</span>
+                            </div>
+                            <div class="skill-item__bar">
+                                <div class="skill-item__progress" data-width="82" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Description (Right Side) -->
+                    <div class="skills__info">
+                        <h3 class="skills__heading">Why Choose Me?</h3>
+                        <p>
+                            With over 5 years of experience in the design industry, I've developed a
+                            strong skill set that allows me to deliver high-quality work consistently.
+                        </p>
+
+                        <!-- Feature list -->
+                        <ul class="skills__features">
+                            <li><i class="fas fa-check-circle"></i> Creative & Unique Designs</li>
+                            <li><i class="fas fa-check-circle"></i> Fast Turnaround Time</li>
+                            <li><i class="fas fa-check-circle"></i> 100% Client Satisfaction</li>
+                            <li><i class="fas fa-check-circle"></i> Unlimited Revisions</li>
+                            <li><i class="fas fa-check-circle"></i> 24/7 Support</li>
+                        </ul>
+
+                        <!-- Stats Counter -->
+                        <div class="skills__stats">
+                            <!-- Numbers are the same as the About page (150+, 300+, 5+, 10+) -->
+                            <div class="stat-item">
+                                <i class="fas fa-face-smile stat-item__icon"></i>
+                                <div class="stat-item__value"><span class="stat-item__number" data-target="150">0</span>+</div>
+                                <span class="stat-item__label">Happy Clients</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-folder-open stat-item__icon"></i>
+                                <div class="stat-item__value"><span class="stat-item__number" data-target="300">0</span>+</div>
+                                <span class="stat-item__label">Projects Done</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-briefcase stat-item__icon"></i>
+                                <div class="stat-item__value"><span class="stat-item__number" data-target="5">0</span>+</div>
+                                <span class="stat-item__label">Years Exp.</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-award stat-item__icon"></i>
+                                <div class="stat-item__value"><span class="stat-item__number" data-target="10">0</span>+</div>
+                                <span class="stat-item__label">Awards Won</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== PORTFOLIO SECTION ========== -->
+        <section class="portfolio section" id="portfolio">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">My Portfolio</span>
+                    <h2 class="section__title">Recent <span>Projects</span></h2>
+                    <p class="section__description">
+                        A showcase of my best design work across different categories
+                    </p>
+                </div>
+
+                <!-- Filter Buttons -->
+                <div class="portfolio__filters">
+                    <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All Works</button>
+                    <button class="filter-btn" type="button" data-filter="photoshop" aria-pressed="false">Photoshop</button>
+                    <button class="filter-btn" type="button" data-filter="illustrator" aria-pressed="false">Illustrator</button>
+                    <button class="filter-btn" type="button" data-filter="wordpress" aria-pressed="false">WordPress</button>
+                    <button class="filter-btn" type="button" data-filter="branding" aria-pressed="false">Branding</button>
+                </div>
+
+                <!-- Portfolio Grid -->
+                <div class="portfolio__grid">
+                    <!-- Project 1 - Photoshop -->
+                    <div class="portfolio-item" data-category="photoshop">
+                        <img src="images/project-1.svg" alt="Photoshop Project 1">
+                        <div class="portfolio-item__overlay">
+                            <span class="portfolio-item__category">Photoshop</span>
+                            <h4 class="portfolio-item__title">Creative Photo Manipulation</h4>
+                            <a href="portfolio.html" class="portfolio-item__link">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 - Illustrator -->
+                    <div class="portfolio-item" data-category="illustrator">
+                        <img src="images/project-2.svg" alt="Illustrator Project 1">
+                        <div class="portfolio-item__overlay">
+                            <span class="portfolio-item__category">Illustrator</span>
+                            <h4 class="portfolio-item__title">Vector Art Design</h4>
+                            <a href="portfolio.html" class="portfolio-item__link">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 - WordPress -->
+                    <div class="portfolio-item" data-category="wordpress">
+                        <img src="images/project-3.svg" alt="WordPress Project 1">
+                        <div class="portfolio-item__overlay">
+                            <span class="portfolio-item__category">WordPress</span>
+                            <h4 class="portfolio-item__title">Business Website Design</h4>
+                            <a href="portfolio.html" class="portfolio-item__link">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 - Branding -->
+                    <div class="portfolio-item" data-category="branding">
+                        <img src="images/project-4.svg" alt="Branding Project 1">
+                        <div class="portfolio-item__overlay">
+                            <span class="portfolio-item__category">Branding</span>
+                            <h4 class="portfolio-item__title">Complete Brand Package</h4>
+                            <a href="portfolio.html" class="portfolio-item__link">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 - Photoshop -->
+                    <div class="portfolio-item" data-category="photoshop">
+                        <img src="images/project-5.svg" alt="Photoshop Project 2">
+                        <div class="portfolio-item__overlay">
+                            <span class="portfolio-item__category">Photoshop</span>
+                            <h4 class="portfolio-item__title">Social Media Graphics</h4>
+                            <a href="portfolio.html" class="portfolio-item__link">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 - Illustrator -->
+                    <div class="portfolio-item" data-category="illustrator">
+                        <img src="images/project-6.svg" alt="Illustrator Project 2">
+                        <div class="portfolio-item__overlay">
+                            <span class="portfolio-item__category">Illustrator</span>
+                            <h4 class="portfolio-item__title">Logo Collection</h4>
+                            <a href="portfolio.html" class="portfolio-item__link">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Link to separate portfolio page -->
+                <div class="portfolio__more">
+                    <a href="portfolio.html" class="btn btn--outline">
+                        View Full Portfolio <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== TESTIMONIALS SECTION ========== -->
+        <section class="testimonials section" id="testimonials">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Client Feedback</span>
+                    <h2 class="section__title">What Clients <span>Say</span></h2>
+                    <p class="section__description">Feedback from past projects and collaborations.</p>
+                </div>
+
+                <div class="testimonials__slider" id="testimonial-slider" aria-roledescription="carousel">
+                    <div class="testimonial-slide active" role="group" aria-roledescription="slide" aria-label="1 of 3" aria-hidden="false">
+                        <article class="testimonial-card">
+                            <div class="testimonial-card__quote"><i class="fas fa-quote-right" aria-hidden="true"></i></div>
+                            <p class="testimonial-card__text">“Pollab is an amazing graphics designer! He created a stunning logo and branding package for my business. His creativity and attention to detail exceeded my expectations. Highly recommended!”</p>
+                            <div class="testimonial-card__author">
+                                <span class="testimonial-card__avatar" aria-hidden="true">RU</span>
+                                <div><h3>Rahim Uddin</h3><span>CEO, TechBangla</span></div>
+                            </div>
+                            <div class="testimonial-card__rating" aria-label="5 out of 5 stars"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i></div>
+                        </article>
+                    </div>
+                    <div class="testimonial-slide" role="group" aria-roledescription="slide" aria-label="2 of 3" aria-hidden="true">
+                        <article class="testimonial-card">
+                            <div class="testimonial-card__quote"><i class="fas fa-quote-right" aria-hidden="true"></i></div>
+                            <p class="testimonial-card__text">“Working with Pollab was a fantastic experience. He designed our entire website on WordPress and the result was beyond what we imagined. Fast, professional, and very talented.”</p>
+                            <div class="testimonial-card__author">
+                                <span class="testimonial-card__avatar" aria-hidden="true">FA</span>
+                                <div><h3>Fatima Akhter</h3><span>Founder, StyleHub</span></div>
+                            </div>
+                            <div class="testimonial-card__rating" aria-label="5 out of 5 stars"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i></div>
+                        </article>
+                    </div>
+                    <div class="testimonial-slide" role="group" aria-roledescription="slide" aria-label="3 of 3" aria-hidden="true">
+                        <article class="testimonial-card">
+                            <div class="testimonial-card__quote"><i class="fas fa-quote-right" aria-hidden="true"></i></div>
+                            <p class="testimonial-card__text">“I needed a complete social media graphics package and Pollab delivered exceptional work. His designs helped our brand grow significantly on Instagram and Facebook. Will definitely work with him again!”</p>
+                            <div class="testimonial-card__author">
+                                <span class="testimonial-card__avatar" aria-hidden="true">SH</span>
+                                <div><h3>Shakib Hasan</h3><span>Marketing Head, FoodieBD</span></div>
+                            </div>
+                            <div class="testimonial-card__rating" aria-label="5 out of 5 stars"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i></div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="testimonials__controls" aria-label="Testimonial controls">
+                    <button class="testimonials__btn testimonials__btn--prev" id="testimonial-prev" type="button" aria-label="Previous testimonial"><i class="fas fa-arrow-left" aria-hidden="true"></i></button>
+                    <div class="testimonials__dots" id="testimonial-dots" role="group" aria-label="Choose a testimonial">
+                        <button class="dot active" type="button" data-slide="0" aria-label="Show testimonial 1" aria-current="true"></button>
+                        <button class="dot" type="button" data-slide="1" aria-label="Show testimonial 2" aria-current="false"></button>
+                        <button class="dot" type="button" data-slide="2" aria-label="Show testimonial 3" aria-current="false"></button>
+                    </div>
+                    <button class="testimonials__btn testimonials__btn--next" id="testimonial-next" type="button" aria-label="Next testimonial"><i class="fas fa-arrow-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </section>
+        <!-- ========== CONTACT SECTION ========== -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Get In Touch</span>
+                    <h2 class="section__title">Let's <span>Work</span> Together</h2>
+                    <p class="section__description">
+                        Have a project in mind? Let's discuss how I can help you
+                    </p>
+                </div>
+
+                <div class="contact__content">
+                    <!-- Contact Info Cards -->
+                    <div class="contact__info">
+                        <div class="contact-info-card">
+                            <div class="contact-info-card__icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <h4>Phone</h4>
+                            <p>+880 1740-144167</p>
+                            <p>+880 1817-870707</p>
+                        </div>
+                        <div class="contact-info-card">
+                            <div class="contact-info-card__icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h4>Email</h4>
+                            <p>fuyadsbd@gmail.com</p>
+                        </div>
+                        <div class="contact-info-card">
+                            <div class="contact-info-card__icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h4>Location</h4>
+                            <p>Dhaka, Bangladesh</p>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <form class="contact__form" id="contact-form">
+                        <div aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;"><label>Leave this empty<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="Your Name" autocomplete="name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control" placeholder="Your Email" autocomplete="email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" class="form-control" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <!-- Footer Logo & Description -->
+                <div class="footer__brand">
+                    <a href="#home" class="footer__logo">POLLAB<span class="logo-dot">.</span></a>
+                    <p>
+                        Professional Graphics Designer creating stunning visual experiences
+                        through creative design and innovation.
+                    </p>
+                    <!-- Footer Social Links -->
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/share/1VcEnyL6dL/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/fuyadhasanpollab?dlrf=MXMzZjlheWJxa3RqaQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com/in/demo" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://behance.net/demo" target="_blank"><i class="fab fa-behance"></i></a>
+                        <a href="https://t.me/Fuyad07" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i></a>
+                        <a href="https://wa.me/8801740144167" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer__links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Separate Pages -->
+                <div class="footer__links">
+                    <h4>More Pages</h4>
+                    <ul>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="portfolio.html">Full Portfolio</a></li>
+                        <li><a href="services.html">All Services</a></li>
+                        <li><a href="contact.html">Contact Me</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer__newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for design tips & updates</p>
+                    <form class="footer__newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer__bottom">
+                <p>&copy; 2026 <strong>MD FuYAD HASAN POLLAB</strong>. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== BACK TO TOP BUTTON ==================== -->
+    <a href="#home" class="back-to-top" id="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Fail-safe: the preloader is always removed, even if an image, CDN file or script.js is slow or broken -->
+    <script>
+        (function () {
+            function hidePreloader() {
+                var p = document.getElementById('preloader');
+                if (!p) return;
+                p.classList.add('hide');
+                p.style.opacity = '0';
+                p.style.visibility = 'hidden';
+                p.style.pointerEvents = 'none';
+                setTimeout(function () { p.style.display = 'none'; }, 600);
+            }
+            if (document.readyState === 'complete') { hidePreloader(); }
+            else { window.addEventListener('load', hidePreloader); }
+            setTimeout(hidePreloader, 2500);
+        })();
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

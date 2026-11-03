@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Decorative portfolio preview">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff9b42"/><stop offset="1" stop-color="#ec4f8a"/></linearGradient><radialGradient id="glow"><stop stop-color="#ec4f8a"/><stop offset="1" stop-color="#ff9b42"/></radialGradient></defs>
+<rect width="800" height="800" fill="#11111a"/><circle cx="400" cy="365" r="330" fill="url(#bg)" opacity=".17"/><rect x="195" y="205" width="205" height="280" rx="18" fill="#fff" fill-opacity=".78" transform="rotate(-10 295 345)"/><rect x="400" y="240" width="205" height="280" rx="18" fill="#fff" fill-opacity=".14" stroke="#fff" stroke-opacity=".65" stroke-width="3" transform="rotate(9 500 380)"/><circle cx="300" cy="320" r="60" fill="url(#glow)"/><path d="M250 405h105" stroke="#11111a" stroke-opacity=".38" stroke-width="7" stroke-linecap="round"/>
+<path d="M0 700h800" stroke="url(#bg)" stroke-opacity=".5" stroke-width="3"/>
+</svg>
