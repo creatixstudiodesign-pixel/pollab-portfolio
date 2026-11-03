@@ -209,6 +209,52 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// Newsletter subscription to Google Sheets
+var newsletterForm = document.getElementById('newsletter-form');
+
+if (newsletterForm) {
+    newsletterForm.addEventListener('submit', async function (event) {
+        event.preventDefault();
+
+        var emailInput = newsletterForm.querySelector('[name="email"]');
+        var button = newsletterForm.querySelector('button');
+        var status = document.getElementById('newsletter-status');
+
+        var email = emailInput.value.trim().toLowerCase();
+
+        if (!email) return;
+
+        button.disabled = true;
+        status.textContent = 'Subscribing...';
+
+        try {
+            await fetch(
+                'https://script.google.com/macros/s/AKfycby4cx7SXn7FZjO7fTlps1KSptZWQQQE3a-UxL_YGOiWOqYeE_nLAGYrMAkwLn5Ho7vL/exec',
+                {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: {
+                        'Content-Type': 'text/plain;charset=UTF-8'
+                    },
+                    body: JSON.stringify({ email: email })
+                }
+            );
+
+            status.textContent =
+                'Subscription request submitted! Thank you.';
+
+            newsletterForm.reset();
+
+        } catch (error) {
+            status.textContent =
+                'Something went wrong. Please try again.';
+        } finally {
+            button.disabled = false;
+        }
+    });
+}
+
+
 
 
 
