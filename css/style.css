@@ -1488,16 +1488,24 @@ img {
     cursor: pointer;
 }
 
-/* Copyright */
+/* =========================================
+   FOOTER COPYRIGHT - FULL WIDTH CENTER
+========================================= */
 .footer__bottom {
+    grid-column: 1 / -1;
+    width: 100%;
     border-top: 1px solid var(--border-color);
     padding: 20px 0;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .footer__bottom p {
+    width: 100%;
+    margin: 0;
     font-size: 1.3rem;
     color: var(--text-muted);
+    text-align: center;
 }
 
 .footer__bottom strong {
